@@ -3,11 +3,20 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+// import * serviceWoker from './serviceWoker'
+// npm install react-service-worker -S
+import * as ServiceWorker from './serviceWorker';
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+      {/* <StateProvider> */}
+          <DataLayer initialState reducer>
+            <App />
+          </DataLayer>
+      {/* </StatePr  ovider> */}
   </React.StrictMode>
 );
 
@@ -15,3 +24,5 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+// ServiceWorker.unregister()
+ServiceWorker.unregister()

@@ -4,7 +4,10 @@ import './App.css';
 import Login  from './Login';
 import { getTokenFromUrl } from './Spotify';
 import SpotifyWebApi from 'spotify-web-api-js';
+import Player from './Player';
 
+
+  
 // variable special de spotify
 const spotify = new SpotifyWebApi();
 
