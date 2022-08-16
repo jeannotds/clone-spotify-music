@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 // import * serviceWoker from './serviceWoker'
 // npm install react-service-worker -S
-import * as ServiceWorker from './serviceWorker';
+// import * as ServiceWorker from './serviceWorker';
 
 
 
@@ -25,4 +25,4 @@ root.render(
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
 // ServiceWorker.unregister()
-ServiceWorker.unregister()
+// ServiceWorker.unregister()
