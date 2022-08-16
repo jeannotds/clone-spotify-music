@@ -2,13 +2,13 @@
 
 
 
-// function Login(){
+function Login(){
 
 
-//     return(
-//         <div>
-//             {/*  Spotify logo  */}
-//             {/* Login with spotify botton */}
-//         </div>
-//     )
-// }
+    return(
+        <div>
+            {/*  Spotify logo  */}
+            {/* Login with spotify botton */}
+        </div>
+    )
+}
