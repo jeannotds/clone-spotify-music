@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import './App.css';
 import Login  from './Login';
 import { getTokenFromUrl } from './Spotify';
+import SpotifyWebApi from 'spotify-web-api-js';
 
 function App() {
 
