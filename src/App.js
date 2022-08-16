@@ -4,11 +4,8 @@ import Login  from './Login';
 function App() {
   return (
     <div className="App">
-      <h1> We are builder clone spotify</h1>
-      {/* spotify logo */}
-      {/* login with spotify */}
-
-      <Login /> 
+        {/* <h1> We are builder clone spotify</h1> */}
+        <Login /> 
     </div>
   );
 }
