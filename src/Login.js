@@ -1,5 +1,5 @@
 import './Login.css'
-import { loginUrl } from './Spotify'
+import { loginUrl } from './spotify'
 
 
 function Login(){
