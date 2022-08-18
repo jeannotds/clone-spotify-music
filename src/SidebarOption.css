@@ -21,3 +21,9 @@
     width: 80%;
     margin: 10px auto;
 }
+
+.sidebarOption > {
+    margin-left: 10px;
+    margin-left: 20px;
+    font-size: 14px;
+}
