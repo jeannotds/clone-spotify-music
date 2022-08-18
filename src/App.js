@@ -36,47 +36,36 @@ function App() {
           type: "SET_TOKEN",
             token: token
         })
-
         // setToken(token);
-
         spotify.setAccessToken(token);
 
         //Recuperation des infos de l'utilisateur
-        spotify.getMe().then(user => {
-
+        spotify.getMe().then((user) => {
           dispatch({
             type: 'SET_USER', 
             user: user,
-          }) ;
+          });
         });
 
-        spotify.getUserPlaylists().then((playlists)=>{
+        //Recuper le playlist
+        spotify.getUserPlaylists().then((playlists) =>{
             dispatch({
                 type: "SET_PLAYLISTS",
                 playlists: playlists,
-            })
-        })
-
+            });
+            console.log(playlists)
+        });
+       
       }
-
-      console.log('I HAVE A TOKEN ', token);
   }, []);
-
-  console.log("User : ", user);
-  console.log("Token : ", token);
 
 
   return (
     <div className="App">
 
         {
-
-          token ? (
-            <Player spotify={spotify} />
-          ) : ( 
-            <Login />
-          )
-
+          token ? <Player spotify={spotify} />
+          : ( <Login /> )
         }
 
     </div>
