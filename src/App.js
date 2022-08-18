@@ -20,7 +20,6 @@ function App() {
   /* useEffect : exécuter du code en fonction d'une condition donnée */
   useEffect(()=>{
       const hash = getTokenFromUrl();
-
       /* 
         Renvoie l'identifiant du fragment (y compris le caractère de hachage) pour la page en cours.
         https://webplatform.github.io/docs/apis/location/hash/
@@ -31,10 +30,9 @@ function App() {
       const token = hash.access_token;
 
       if(token){
-
         dispatch({
           type: "SET_TOKEN",
-            token: token
+            token: token,
         })
         // setToken(token);
         spotify.setAccessToken(token);
@@ -42,18 +40,18 @@ function App() {
         //Recuperation des infos de l'utilisateur
         spotify.getMe().then((user) => {
           dispatch({
-            type: 'SET_USER', 
+            type: "SET_USER", 
             user: user,
           });
         });
 
         //Recuper le playlist
-        spotify.getUserPlaylists().then((playlists) =>{
-            dispatch({
+        spotify.getUserPlaylists().then((playlists) => {
+          dispatch({
                 type: "SET_PLAYLISTS",
                 playlists: playlists,
             });
-            console.log(playlists)
+            // console.log(playlists)
         });
        
       }
@@ -65,7 +63,7 @@ function App() {
 
         {
           token ? <Player spotify={spotify} />
-          : ( <Login /> )
+          : <Login /> 
         }
 
     </div>

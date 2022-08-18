@@ -4,10 +4,7 @@ import Body from './Body'
 import footer from './Footer'
 import Footer from './Footer'
 
-
 function Player({ spotify }){
-
-
 
     return(
         <div className='player'>

@@ -18,12 +18,13 @@
 
 .sidebar > hr{
     border: 1px solid #282828;
-    width: 80%;
+    width: 90%;
     margin: 10px auto;
 }
 
-.sidebarOption > {
-    margin-left: 10px;
+.sidebarOption > p{
+    margin-top: 10px;
     margin-left: 20px;
     font-size: 14px;
+    color: white;
 }
