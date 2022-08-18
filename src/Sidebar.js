@@ -15,6 +15,12 @@ function Sidebar() {
         <SidebarOption Icon={SearchIcon} title="Search" />
         <SidebarOption Icon={HouseIcon} title="Your library" />
 
+        <br/>
+
+        <strong className='sidebar__title'>PLAYLISTS</strong>
+
+        <hr/>
+
     </div>
   )
 }

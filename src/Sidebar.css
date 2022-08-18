@@ -14,3 +14,9 @@ img{
     height: 78px;
     padding: 10px;
 }
+
+.sidebar__title{
+    margin-left: 5px;
+    padding: 10px;
+    font-size: 12px;
+}
